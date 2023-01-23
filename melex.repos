@@ -1,0 +1,5 @@
+repositories:
+  src/ppi/external:
+    type: git
+    url: https://github.com/PPI-PUT/example_package.git
+    version: master
