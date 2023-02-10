@@ -48,10 +48,17 @@
         },
         // Test tasks
         {
-            "label": "test",
-            "detail": "Run all unit tests.",
+            "label": "test all",
+            "detail": "Run all unit tests (all packages).",
             "type": "shell",
-            "command": "colcon test && colcon test-result --verbose",
+            "command": "colcon test-result --delete-yes && colcon test && colcon test-result --verbose",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "test package",
+            "detail": "Run all unit tests (single package).",
+            "type": "shell",
+            "command": "colcon test-result --delete-yes && colcon test --packages-select ${input:package} && colcon test-result --verbose",
             "problemMatcher": ["$gcc"]
         },
         // Clean

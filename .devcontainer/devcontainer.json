@@ -3,9 +3,7 @@
 	"dockerFile": "Dockerfile",
 	"build": {
 		"args": {
-			"WORKSPACE": "${containerWorkspaceFolder}",
-			"PHOXI_VERSION": "1.9.4",
-			"PHOXI_URL": "https://chmura.put.poznan.pl/s/buJcKH9XV7TdJ0m/download"
+			"WORKSPACE": "${containerWorkspaceFolder}"
 		}
 	},
 	"remoteUser": "ros",
@@ -14,7 +12,7 @@
 		"--cap-add=SYS_PTRACE",
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
-		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
+		"--volume=/tmp/.X11-unix:/tmp/.X11-unix"
 	],
 	"containerEnv": {
 		"DISPLAY": "${localEnv:DISPLAY}",
