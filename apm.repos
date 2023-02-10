@@ -15,6 +15,10 @@ repositories:
     type: git
     url: https://github.com/ros-drivers/ros2_ouster_drivers.git
     version: humble
+  ppi/external/lidarslam_ros2:
+    type: git
+    url: https://github.com/rsasaki0109/lidarslam_ros2.git
+    version: humble
   sensor_kit/external/apm_sensor_kit_launch:
     type: git
     url: https://github.com/PPI-PUT/apm_sensor_kit_launch.git

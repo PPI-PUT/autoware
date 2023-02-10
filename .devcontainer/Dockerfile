@@ -13,11 +13,13 @@ RUN curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.
 
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
+        iputils-ping \
         libtins-dev \
-        ros-humble-rtcm-msgs \
-        vim \
         nmap \
-        iputils-ping 
+        ros-humble-libg2o \
+        ros-humble-magic-enum \
+        ros-humble-rtcm-msgs \        
+        vim
 
 
 # install custom python packages
