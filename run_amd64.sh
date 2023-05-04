@@ -6,6 +6,5 @@ rocker --network host --privileged --nvidia --x11 --user --name autoware \
 	--env="VEHICLE_ID=default" \
 	--volume /dev \
 	--volume $HOME/autoware:$HOME/autoware \
-	--volume $HOME/race_common:$HOME/race_common \
 	--port 9090:9090 \
 	-- ghcr.io/autowarefoundation/autoware-universe:humble-latest-cuda-amd64
