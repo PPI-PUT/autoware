@@ -1,0 +1,21 @@
+repositories:
+  launcher/external/f1tenth_launch:
+    type: git
+    version: master
+    url: https://github.com/PPI-PUT/f1tenth_launch.git
+  vehicle/external/f1tenth_vehicle_launch:
+    type: git
+    version: main
+    url: https://github.com/PPI-PUT/f1tenth_vehicle_launch.git
+  sensor_kit/external/f1tenth_sensor_kit_launch:
+    type: git
+    version: main
+    url: https://github.com/PPI-PUT/f1tenth_sensor_kit_launch.git
+  universe/external/twist2odom:
+    type: git
+    version: master
+    url: https://github.com/PPI-PUT/twist2odom.git
+  universe/external/trajectory_loader:
+    type: git
+    version: master
+    url: https://github.com/PPI-PUT/trajectory_loader.git
